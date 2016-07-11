@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>體育雲資料視覺化</title>
+    <!-- libraries-->
+    <script type="text/javascript" src="//codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="//d3js.org/d3.v4.min.js"></script>
+    <!-- custom files-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="//d3js.org/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"></script>
+    
+
+    <style>
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: auto;
+      position: relative;
+      width: 960px;
+    }
+
+    text {
+      font: 10px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    form {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h3>各縣市體育設施數</h3>
+
+    <svg width="960" height="600"></svg>
+
+    <script>
+
+    var svg = d3.select("svg"),
+        margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height") - margin.top - margin.bottom,
+        g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x = d3.scaleBand()
+        .rangeRound([0, width])
+        .padding(0.1)
+        .align(0.1);
+
+    var y = d3.scaleLinear()
+        .rangeRound([height, 0]);
+
+    var z = d3.scaleOrdinal()
+        .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56",//5 
+                "#d0743c", "#ff8c00", "#028e00", "#b3b6d7", "#917153",//10
+                "#b440ae", "#45c3ba", "#abeb16", "#973133", "#e10f33", //15
+                "#0b9a3d", "#4753fb", "#406812", "#456fe9", "#cb26dc",//20
+                "#233da5", "#f285c6", "#233da5", "#b1ffed", "#73b80c",//25
+                "#350c09", "#7ec920", "#5f4ea0", "#b121b4", "#6bd90a",//30
+                "#adae4c", "#5e7069", "#3d7ded", "#3d7ded", "#37a213",//35
+                "#a48ab8", "#e9df0a", "#580241", "#a24477", "#77c309",//40
+                "#095caa", "#bf90c1", "#7400c7", "#b07a79", "#51044d",//45
+                "#6e7e6d", "#af1a8a", "#c64bbd", "#894ace", "#d830a6",//50
+                "#b80783", "#4dd0ce", "#e62e73", "#9c96e3", "#52f8aa",
+                "#fd1612", "#1fc9dd", "#987a73", "#685843", "#6a9de1"]);
+
+    var stack = d3.stack();
+
+    d3.csv("data/dataCity4.csv", type, function(error, data) {
+      if (error) throw error;
+
+      data.sort(function(a, b) { return b.total - a.total; });
+      var padding = 20;
+      x.domain(data.map(function(d) { return d.縣市; }));
+      y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+      z.domain(data.columns.slice(1));
+
+      g.selectAll(".serie")
+        .data(stack.keys(data.columns.slice(1))(data))
+        .enter().append("g")
+          .attr("class", "serie")
+          .attr("fill", function(d) { return z(d.key); })
+        .selectAll("rect")
+        .data(function(d) { return d; })
+        .enter().append("rect")
+          .attr("x", function(d) { return x(d.data.縣市); })
+          .attr("y", function(d) { return y(d[1]); })
+          .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+          .attr("width", x.bandwidth());
+      //x軸
+      g.append("g")
+          .attr("class", "axis axis--x")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x));
+     //Ｙ軸
+      g.append("g")
+          .attr("class", "axis axis--y")
+          .call(d3.axisLeft(y).ticks(10, "s"))
+        .append("text")
+          .attr("x", 2)
+          .attr("y", y(y.ticks(10).pop()))
+          .attr("dy", "0.35em")
+          .attr("text-anchor", "start")
+          .attr("fill", "#000")
+          .text("設施數");
+      //圖例
+      var legend = g.selectAll(".legend")
+        .data(data.columns.slice(1).reverse())
+        .enter()
+        .append("g")
+          .attr("class", "legend")
+          .attr("transform", function(d, i) { return "translate(0," + i * 15 + ")"; })
+          .style("font", "10px sans-serif");
+
+      var datalen = data.columns.slice(1).reverse().length ;
+      var ix = 0 ;
+      var iy = 0 ;
+      legend.append("rect")
+          .attr("x",function(d) { 
+                                    if(ix++ > (datalen/2) ){  
+                                        return width - 10; 
+                                    }else{
+                                        return width - 190;
+                                    }
+                                } )
+           .attr("y",function(d) { 
+                                    if(iy++ < (datalen/2)){  
+                                        return 0; 
+                                    }else{
+                                        
+                                        return (-(height/2) -145);
+                                    }
+                                } )
+          .attr("width", 10)
+          .attr("height", 10)
+          .attr("fill", z);
+     //圖例的文字
+      var ix = 0 ;
+      var iy = 0 ;
+
+      
+      legend.append("text")
+          .attr("x",function(d) { 
+                                    if(ix++ > (datalen/2) ){  
+                                        return width - 18; 
+                                    }else{
+                                        return width - 200;
+                                    }
+                                } )
+          .attr("y", function(d) { 
+                                    if(iy++ < (datalen/2)){  
+                                        return 5; 
+                                    }else{
+                                        
+                                        return (-(height/2) -140);
+                                    }
+                                } )
+          .attr("dy", ".35em")
+          .attr("text-anchor", "end")
+          .text(function(d) { return d; });
+    });
+
+    function type(d, i, columns) {
+      for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
+      d.total = t;
+      return d;
+    }
+
+    </script>
+    
+</body>
+
+</html>
