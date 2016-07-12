@@ -1,0 +1,856 @@
+{
+  "name": "flare",
+  "description": "flare",
+  "children": [
+    {
+      "name": "一月份",
+      "description": "一月份",
+      "children": [
+        {
+          "name": "活動",
+          "description": "設施辦理活動人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 9127
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 91588
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 45711
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 26414
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "非體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障男性人次",
+                      "size": 39559
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障男性人次",
+                      "size": 46797
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加非體育體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障女性人次",
+                      "size": 66746
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障女性人次",
+                      "size": 83307
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "一般開放使用",
+          "description": "一般開放時間使用人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 48703
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 1570
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 9433
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 99236
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "一般開放時間進行非體育活動人次",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間使用的身障男性人次",
+                      "size": 87785
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間使用的非身障男性人次",
+                      "size": 92237
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間的身障女性使用人次",
+                      "size": 28778
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間開放的非身障女性人次",
+                      "size": 62246
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "二月份",
+      "description": "二月份",
+      "children": [
+        {
+          "name": "活動",
+          "description": "設施辦理活動人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 43147
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 9500
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 79175
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 36415
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "非體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障男性人次",
+                      "size": 45633
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障男性人次",
+                      "size": 99958
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加非體育體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障女性人次",
+                      "size": 73824
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障女性人次",
+                      "size": 64643
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "一般開放使用",
+          "description": "一般開放時間使用人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 89651
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 96954
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 106828
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 25349
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "一般開放時間進行非體育活動人次",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間使用的身障男性人次",
+                      "size": 102484
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間使用的非身障男性人次",
+                      "size": 14908
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間的身障女性使用人次",
+                      "size": 87229
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間開放的非身障女性人次",
+                      "size": 140441
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "三月份",
+      "description": "三月份",
+      "children": [
+        {
+          "name": "活動",
+          "description": "設施辦理活動人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 172474
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 37773
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 131434
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 37446
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "非體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障男性人次",
+                      "size": 16574
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障男性人次",
+                      "size": 120662
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加非體育體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障女性人次",
+                      "size": 26800
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障女性人次",
+                      "size": 131940
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "一般開放使用",
+          "description": "一般開放時間使用人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 80267
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 41668
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 68400
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 115558
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "一般開放時間進行非體育活動人次",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間使用的身障男性人次",
+                      "size": 159215
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間使用的非身障男性人次",
+                      "size": 21873
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間的身障女性使用人次",
+                      "size": 143759
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間開放的非身障女性人次",
+                      "size": 172474
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "四月份",
+      "description": "四月份",
+      "children": [
+        {
+          "name": "活動",
+          "description": "設施辦理活動人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 161270
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 121736
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 51310
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 109556
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "非體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障男性人次",
+                      "size": 138595
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障男性人次",
+                      "size": 69665
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加非體育體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障女性人次",
+                      "size": 76517
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障女性人次",
+                      "size": 169236
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "一般開放使用",
+          "description": "一般開放時間使用人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 59920
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 121271
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 28096
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 12630
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "一般開放時間進行非體育活動人次",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間使用的身障男性人次",
+                      "size": 80379
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間使用的非身障男性人次",
+                      "size": 86760
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間的身障女性使用人次",
+                      "size": 80911
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間開放的非身障女性人次",
+                      "size": 164540
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "五月份",
+      "description": "五月份",
+      "children": [
+        {
+          "name": "活動",
+          "description": "設施辦理活動人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 34918
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 12584
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 151703
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 45147
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "非體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障男性人次",
+                      "size": 26526
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障男性人次",
+                      "size": 7060
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性參加非體育體育活動人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加非體育活動的身障女性人次",
+                      "size": 10154
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加非體育活動的非身障女性人次",
+                      "size": 83638
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "一般開放使用",
+          "description": "一般開放時間使用人次",
+          "children": [
+            {
+              "name": "體育活動",
+              "description": "體育活動",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障男性人次",
+                      "size": 121577
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障男性人次",
+                      "size": 35201
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "參加活動的身障女性人次",
+                      "size": 108220
+                    },
+                    {
+                      "name": "一般",
+                      "description": "參加活動的非身障女性人次",
+                      "size": 106669
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "非體育活動",
+              "description": "一般開放時間進行非體育活動人次",
+              "children": [
+                {
+                  "name": "男性",
+                  "description": "男性",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間使用的身障男性人次",
+                      "size": 153544
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間使用的非身障男性人次",
+                      "size": 3996
+                    }
+                  ]
+                },
+                {
+                  "name": "女性",
+                  "description": "女性於一般開放時間使用人次",
+                  "children": [
+                    {
+                      "name": "身障",
+                      "description": "於一般開放時間的身障女性使用人次",
+                      "size": 27775
+                    },
+                    {
+                      "name": "一般",
+                      "description": "於一般開放時間開放的非身障女性人次",
+                      "size": 9939
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
