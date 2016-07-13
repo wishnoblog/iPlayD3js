@@ -1,6 +1,6 @@
 {
-  "name": "flare",
-  "description": "flare",
+  "name": "使用人次",
+  "description": "設施使用人次",
   "children": [
     {
       "name": "一月份",
