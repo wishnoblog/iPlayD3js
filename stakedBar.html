@@ -74,7 +74,7 @@
 
     var stack = d3.stack();
 
-    d3.csv("data/dataCity4.csv", type, function(error, data) {
+    d3.csv("data/dataCity.csv", type, function(error, data) {
       if (error) throw error;
 
       data.sort(function(a, b) { return b.total - a.total; });
