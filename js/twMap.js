@@ -30,7 +30,7 @@ $.getJSON( "data/GymFuncPeopleFuncCount.json", function( data ) {
 });
 
 
-  d3.json("/data/county.json", function(topodata) {
+  d3.json("data/county.json", function(topodata) {
     var features = topojson.feature(topodata, topodata.objects.county).features;
     
     //著色設定
