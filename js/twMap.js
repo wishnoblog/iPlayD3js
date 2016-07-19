@@ -30,8 +30,9 @@ $.getJSON( "data/GymFuncPeopleFuncCount.json", function( data ) {
 });
 
 
-  d3.json("data/county.json", function(topodata) {
-    var features = topojson.feature(topodata, topodata.objects.county).features;
+  d3.json("data/countyTown.json", function(topodata) {
+    console.log(topodata);
+    var features = topojson.feature(topodata, topodata.objects.Town_MOI_1041215).features;
     
     //著色設定
     var color = d3.scale.linear().domain([0,4000]).range(["#fff","#f00"]);
