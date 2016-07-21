@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>試作熱度地圖</title>
+    <!-- libraries-->
+    <script type="text/javascript" src="//codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+    <!-- custom files-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="//d3js.org/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="js/fishEye.js"></script>
+    <script type="text/javascript" src="js/twMap.js"></script>
+</head>
+
+<body>
+    <h1>熱度地圖</h1>
+    <p>各縣市人口數/設施數</p>
+        <a href="index.html">回上頁</a>
+    <svg  id="twMap" width="80%" height="400px" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid"></svg>
+    <div id="info">
+        <div id="name"></div>
+        每<div id="density"></div>人<br>
+        <label>共用一個設施</label>
+    </div>
+</body>
+
+</html>
